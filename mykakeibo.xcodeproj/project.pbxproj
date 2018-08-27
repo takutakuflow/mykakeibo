@@ -15,6 +15,7 @@
 		78BE7F8321120F910005B644 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BE7F8221120F910005B644 /* main.m */; };
 		78BE7F8D21120F910005B644 /* mykakeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BE7F8C21120F910005B644 /* mykakeiboTests.m */; };
 		78BE7F9821120F910005B644 /* mykakeiboUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BE7F9721120F910005B644 /* mykakeiboUITests.m */; };
+		78DD9989212998420045AE5B /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DD9988212998420045AE5B /* InputViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		78BE7F9321120F910005B644 /* mykakeiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mykakeiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78BE7F9721120F910005B644 /* mykakeiboUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mykakeiboUITests.m; sourceTree = "<group>"; };
 		78BE7F9921120F910005B644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78DD9987212998420045AE5B /* InputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
+		78DD9988212998420045AE5B /* InputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				78BE7F7E21120F910005B644 /* LaunchScreen.storyboard */,
 				78BE7F8121120F910005B644 /* Info.plist */,
 				78BE7F8221120F910005B644 /* main.m */,
+				78DD9987212998420045AE5B /* InputViewController.h */,
+				78DD9988212998420045AE5B /* InputViewController.m */,
 			);
 			path = mykakeibo;
 			sourceTree = "<group>";
@@ -265,6 +270,7 @@
 				78BE7F7821120F8F0005B644 /* ViewController.m in Sources */,
 				78BE7F8321120F910005B644 /* main.m in Sources */,
 				78BE7F7521120F8F0005B644 /* AppDelegate.m in Sources */,
+				78DD9989212998420045AE5B /* InputViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

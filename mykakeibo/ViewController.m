@@ -11,17 +11,30 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *inPrice;
 @property (weak, nonatomic) IBOutlet UILabel *outPrice;
+@property (weak, nonatomic) IBOutlet UITableView *tableview;
+@property (weak, nonatomic) IBOutlet UILabel *restPrice;
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    int inPriceNum;
+    int outPriceNum;
+    int restPriceNum;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.inPrice.text = @"110,000";
-    self.outPrice.text = @"30,000";
+    inPriceNum = 110000;
+    outPriceNum = 30000;
+    
+    restPriceNum = inPriceNum - outPriceNum;
+    
+    self.inPrice.text = [NSString stringWithFormat:@"%d",inPriceNum];
+    self.outPrice.text = [NSString stringWithFormat:@"%d",outPriceNum];
+    self.restPrice.text = [NSString stringWithFormat:@"%d", restPriceNum];
+    
 }
 
 
