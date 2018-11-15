@@ -34,7 +34,6 @@
     self.inPrice.text = [NSString stringWithFormat:@"%d",inPriceNum];
     self.outPrice.text = [NSString stringWithFormat:@"%d",outPriceNum];
     self.restPrice.text = [NSString stringWithFormat:@"%d", restPriceNum];
-    
 }
 
 
