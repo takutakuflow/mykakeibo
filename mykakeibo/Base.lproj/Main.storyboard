@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--入力-->
         <scene sceneID="nLk-zc-irM">
             <objects>
                 <viewController id="7rS-Gv-NhD" sceneMemberID="viewController">
@@ -20,13 +20,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="JV4-1x-jEd"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="ijV-Xd-PAK"/>
+                    <tabBarItem key="tabBarItem" title="入力" id="ijV-Xd-PAK" userLabel="カレンダー"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yDG-l3-ahw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="846" y="967"/>
         </scene>
-        <!--Item-->
+        <!--設定-->
         <scene sceneID="GL9-KR-2cD">
             <objects>
                 <viewController id="txz-TM-6QU" sceneMemberID="viewController">
@@ -36,13 +36,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="LSl-1G-A4M"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="UtQ-2A-w4u"/>
+                    <tabBarItem key="tabBarItem" title="設定" id="UtQ-2A-w4u" userLabel="設定"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="olF-Ol-8Ba" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1546" y="974"/>
         </scene>
-        <!--Item-->
+        <!--カレンダー-->
         <scene sceneID="aNk-bC-1UI">
             <objects>
                 <viewController id="pME-dG-Gmd" sceneMemberID="viewController">
@@ -52,91 +52,114 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="4zD-TE-q57"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="2Vw-s3-Yx0"/>
+                    <tabBarItem key="tabBarItem" title="カレンダー" id="2Vw-s3-Yx0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ss-sq-iMI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1543" y="302"/>
         </scene>
-        <!--Item 1-->
+        <!--ホーム-->
         <scene sceneID="N7S-6Q-2KT">
             <objects>
-                <viewController id="iaJ-m2-Zb6" sceneMemberID="viewController">
+                <viewController id="iaJ-m2-Zb6" customClass="HomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Syu-pD-jfA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="残高" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWj-iY-dUP">
-                                <rect key="frame" x="97" y="249" width="35" height="21"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cpf-W3-3wS">
+                                <rect key="frame" x="67" y="428" width="241" height="130"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxH-BI-RUO" userLabel="収入数値">
+                                        <rect key="frame" x="98.5" y="15" width="42" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="tUV-Oo-rPL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0c0-Za-Myl" userLabel="支出数値">
+                                        <rect key="frame" x="98.5" y="51" width="42" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="rI7-no-apI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支出:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ad3-2r-aRQ">
+                                        <rect key="frame" x="31" y="51" width="40" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="HGz-VK-BX2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="収入:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQc-9B-YHP">
+                                        <rect key="frame" x="31" y="15" width="40" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="7se-2C-cmG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="収支:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWj-iY-dUP">
+                                        <rect key="frame" x="31" y="87" width="40" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="8ho-qF-KWO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHt-H4-cC2" userLabel="支出数値">
+                                        <rect key="frame" x="98.5" y="87" width="42" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="D2z-eQ-fhg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="8ho-qF-KWO"/>
-                                    <constraint firstAttribute="width" constant="35" id="WnD-UU-oOI"/>
+                                    <constraint firstItem="YxH-BI-RUO" firstAttribute="leading" secondItem="pQc-9B-YHP" secondAttribute="trailing" constant="27.5" id="2ta-Fn-Na8"/>
+                                    <constraint firstItem="Ad3-2r-aRQ" firstAttribute="leading" secondItem="pQc-9B-YHP" secondAttribute="leading" id="3Ld-f8-lk6"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0c0-Za-Myl" secondAttribute="trailing" constant="20" symbolic="YES" id="62i-eY-AcQ"/>
+                                    <constraint firstItem="fWj-iY-dUP" firstAttribute="top" secondItem="Ad3-2r-aRQ" secondAttribute="bottom" constant="15" id="6dm-Eb-kQ5"/>
+                                    <constraint firstItem="YxH-BI-RUO" firstAttribute="top" secondItem="cpf-W3-3wS" secondAttribute="top" constant="15" id="8J0-v5-UIf"/>
+                                    <constraint firstItem="bHt-H4-cC2" firstAttribute="top" secondItem="0c0-Za-Myl" secondAttribute="bottom" constant="15" id="Edh-M9-8qh"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YxH-BI-RUO" secondAttribute="trailing" constant="20" symbolic="YES" id="G7m-DQ-UdS"/>
+                                    <constraint firstItem="0c0-Za-Myl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ad3-2r-aRQ" secondAttribute="trailing" constant="8" symbolic="YES" id="RQC-cg-RCz"/>
+                                    <constraint firstItem="fWj-iY-dUP" firstAttribute="leading" secondItem="pQc-9B-YHP" secondAttribute="leading" id="Vfy-6E-D8T"/>
+                                    <constraint firstItem="0c0-Za-Myl" firstAttribute="leading" secondItem="YxH-BI-RUO" secondAttribute="leading" id="WfG-vd-So4"/>
+                                    <constraint firstItem="pQc-9B-YHP" firstAttribute="top" secondItem="cpf-W3-3wS" secondAttribute="top" constant="15" id="ZSQ-Cy-hFq"/>
+                                    <constraint firstItem="bHt-H4-cC2" firstAttribute="leading" secondItem="YxH-BI-RUO" secondAttribute="leading" id="aC6-pE-btj"/>
+                                    <constraint firstItem="Ad3-2r-aRQ" firstAttribute="top" secondItem="pQc-9B-YHP" secondAttribute="bottom" constant="15" id="fPI-Mi-iMF"/>
+                                    <constraint firstItem="pQc-9B-YHP" firstAttribute="leading" secondItem="cpf-W3-3wS" secondAttribute="leading" constant="31" id="n3z-x8-1NP"/>
+                                    <constraint firstItem="0c0-Za-Myl" firstAttribute="top" secondItem="YxH-BI-RUO" secondAttribute="bottom" constant="15" id="pyL-lE-R5m"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bHt-H4-cC2" secondAttribute="trailing" constant="20" symbolic="YES" id="tai-tw-xou"/>
+                                    <constraint firstItem="bHt-H4-cC2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fWj-iY-dUP" secondAttribute="trailing" constant="8" symbolic="YES" id="vDU-Rs-GkN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxH-BI-RUO" userLabel="収入数値">
-                                <rect key="frame" x="142" y="168" width="100" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="TQa-tJ-Xfc"/>
-                                    <constraint firstAttribute="height" constant="21" id="tUV-Oo-rPL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0c0-Za-Myl" userLabel="支出数値">
-                                <rect key="frame" x="142" y="209" width="100" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Ku6-11-F4T"/>
-                                    <constraint firstAttribute="height" constant="21" id="rI7-no-apI"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支出" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ad3-2r-aRQ">
-                                <rect key="frame" x="97" y="209" width="35" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="35" id="AFh-XB-JyB"/>
-                                    <constraint firstAttribute="height" constant="21" id="HGz-VK-BX2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="収入" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQc-9B-YHP">
-                                <rect key="frame" x="97" y="168" width="35" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="7se-2C-cmG"/>
-                                    <constraint firstAttribute="width" constant="35" id="pAP-j6-Jpe"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="fWj-iY-dUP" firstAttribute="leading" secondItem="44N-cH-DHF" secondAttribute="leading" constant="97" id="8cE-Z9-qOr"/>
-                            <constraint firstItem="0c0-Za-Myl" firstAttribute="top" secondItem="YxH-BI-RUO" secondAttribute="bottom" constant="20" id="Gda-L4-ufT"/>
-                            <constraint firstItem="Ad3-2r-aRQ" firstAttribute="top" secondItem="pQc-9B-YHP" secondAttribute="bottom" constant="20" id="U6X-78-tfj"/>
-                            <constraint firstItem="fWj-iY-dUP" firstAttribute="top" secondItem="Ad3-2r-aRQ" secondAttribute="bottom" constant="19" id="WiI-oj-qzM"/>
-                            <constraint firstItem="fWj-iY-dUP" firstAttribute="leading" secondItem="Ad3-2r-aRQ" secondAttribute="leading" id="g8e-hi-TjD"/>
-                            <constraint firstItem="YxH-BI-RUO" firstAttribute="leading" secondItem="pQc-9B-YHP" secondAttribute="trailing" constant="10" id="jeN-GR-wv4"/>
-                            <constraint firstItem="YxH-BI-RUO" firstAttribute="baseline" secondItem="pQc-9B-YHP" secondAttribute="baseline" id="noH-ae-tAY"/>
-                            <constraint firstItem="44N-cH-DHF" firstAttribute="bottom" secondItem="fWj-iY-dUP" secondAttribute="bottom" constant="348" id="qtm-cz-cdM"/>
-                            <constraint firstItem="0c0-Za-Myl" firstAttribute="leading" secondItem="Ad3-2r-aRQ" secondAttribute="trailing" constant="10" id="vwn-Io-ihH"/>
-                            <constraint firstItem="fWj-iY-dUP" firstAttribute="leading" secondItem="pQc-9B-YHP" secondAttribute="leading" id="wzr-Ge-kQD"/>
+                            <constraint firstItem="cpf-W3-3wS" firstAttribute="centerX" secondItem="44N-cH-DHF" secondAttribute="centerX" id="AAl-aa-Qgi"/>
+                            <constraint firstItem="cpf-W3-3wS" firstAttribute="top" secondItem="44N-cH-DHF" secondAttribute="top" constant="408" id="Pze-1t-gTu"/>
+                            <constraint firstItem="44N-cH-DHF" firstAttribute="bottom" secondItem="cpf-W3-3wS" secondAttribute="bottom" constant="60" id="VLl-03-cdY"/>
+                            <constraint firstItem="cpf-W3-3wS" firstAttribute="leading" secondItem="44N-cH-DHF" secondAttribute="leading" constant="67" id="vDZ-cq-tJ1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="44N-cH-DHF"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="e7h-9L-bKe"/>
+                    <tabBarItem key="tabBarItem" title="ホーム" id="e7h-9L-bKe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8K7-rR-1LL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="846" y="302"/>
+            <point key="canvasLocation" x="845.60000000000002" y="301.79910044977515"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Md3-nX-53j">

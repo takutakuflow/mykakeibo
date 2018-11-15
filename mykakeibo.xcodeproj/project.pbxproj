@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7816535A21946C1900CB3E3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7816535921946C1900CB3E3A /* GoogleService-Info.plist */; };
+		7820B09D219E326800242CAA /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7820B09C219E326800242CAA /* HomeViewController.m */; };
 		78BE7F7521120F8F0005B644 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BE7F7421120F8F0005B644 /* AppDelegate.m */; };
 		78BE7F7821120F8F0005B644 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BE7F7721120F8F0005B644 /* ViewController.m */; };
 		78BE7F7B21120F8F0005B644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BE7F7921120F8F0005B644 /* Main.storyboard */; };
@@ -47,6 +48,8 @@
 		5402762D21EEBB5383A5C8E9 /* libPods-mykakeiboTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mykakeiboTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6372489150212EC3F9719CA3 /* Pods-mykakeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mykakeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-mykakeibo/Pods-mykakeibo.release.xcconfig"; sourceTree = "<group>"; };
 		7816535921946C1900CB3E3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7820B09B219E326800242CAA /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		7820B09C219E326800242CAA /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		78BE7F7021120F8F0005B644 /* mykakeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mykakeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78BE7F7321120F8F0005B644 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		78BE7F7421120F8F0005B644 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -158,6 +161,8 @@
 				78BE7F8221120F910005B644 /* main.m */,
 				78DD9987212998420045AE5B /* InputViewController.h */,
 				78DD9988212998420045AE5B /* InputViewController.m */,
+				7820B09B219E326800242CAA /* HomeViewController.h */,
+				7820B09C219E326800242CAA /* HomeViewController.m */,
 			);
 			path = mykakeibo;
 			sourceTree = "<group>";
@@ -386,6 +391,7 @@
 				78BE7F7821120F8F0005B644 /* ViewController.m in Sources */,
 				78BE7F8321120F910005B644 /* main.m in Sources */,
 				78BE7F7521120F8F0005B644 /* AppDelegate.m in Sources */,
+				7820B09D219E326800242CAA /* HomeViewController.m in Sources */,
 				78DD9989212998420045AE5B /* InputViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
