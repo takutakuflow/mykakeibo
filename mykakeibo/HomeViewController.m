@@ -17,22 +17,42 @@
 // 各スライスのデータ
 @property(nonatomic, strong) NSMutableArray *slices;
 
+@property (weak, nonatomic) IBOutlet UILabel *inPrice;
+@property (weak, nonatomic) IBOutlet UILabel *outPrice;
+@property (weak, nonatomic) IBOutlet UILabel *restPrice;
+
 @end
 
-@implementation HomeViewController
+@implementation HomeViewController {
+    int inPriceNum;
+    int outPriceNum;
+    int restPriceNum;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    inPriceNum = 110000;
+    outPriceNum = 30000;
+    
+    restPriceNum = inPriceNum - outPriceNum;
+    
+    self.inPrice.text = [NSString stringWithFormat:@"%d円",inPriceNum];
+    self.outPrice.text = [NSString stringWithFormat:@"%d円",outPriceNum];
+    self.restPrice.text = [NSString stringWithFormat:@"%d円", restPriceNum];
+    
     // スライスに表示するデータの定義
     self.slices = [NSMutableArray arrayWithCapacity:5];
     
-    for (int i = 0; i < 5; i ++) {
-        NSNumber *one = [NSNumber numberWithInt:rand() % 60 + 20];
-        [self.slices addObject:one];
-    }
+    NSNumber *indata = [NSNumber numberWithInt:inPriceNum];
+    [self.slices addObject:indata];
     
+    NSNumber *outdata = [NSNumber numberWithInt:outPriceNum];
+    [self.slices addObject:outdata];
+    
+    NSNumber *restdata = [NSNumber numberWithInt:restPriceNum];
+    [self.slices addObject:restdata];
     // 各項目の背景色を定義
     self.sliceColors = @[[UIColor colorWithRed:246/255.0 green:155/255.0 blue:0/255.0 alpha:1],
                          [UIColor colorWithRed:129/255.0 green:195/255.0 blue:29/255.0 alpha:1],
@@ -48,9 +68,9 @@
     // データソースの設定
     pieChart.dataSource = self;
     // パイチャートの中心位置
-    pieChart.pieCenter = CGPointMake([UIScreen mainScreen].bounds.size.width / 2, 200);
+    pieChart.pieCenter = CGPointMake([UIScreen mainScreen].bounds.size.width / 2 - 10, 200);
     // YESの場合、パーセンテージで数字を表示します。
-    pieChart.showPercentage = YES;
+    pieChart.showPercentage = NO;
     // 値を表示するラベルのフォント
     pieChart.labelFont = [UIFont systemFontOfSize:12.0];
     // 値を表示するラベルの色
@@ -91,7 +111,7 @@
 // 各スライスに表示する文字列の設定(Optional)
 - (NSString *)pieChart:(XYPieChart *)pieChart textForSliceAtIndex:(NSUInteger)index
 {
-    return [NSString stringWithFormat:@"%@ 件", self.slices[index]];
+    return [NSString stringWithFormat:@"%@ 円", self.slices[index]];
 }
 
 @end

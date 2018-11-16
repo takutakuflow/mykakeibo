@@ -17,6 +17,15 @@
                     <view key="view" contentMode="scaleToFill" id="9P7-en-Nhb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1yH-oH-m5p">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="入力" id="PtV-e9-hUX"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="JV4-1x-jEd"/>
                     </view>
@@ -33,6 +42,15 @@
                     <view key="view" contentMode="scaleToFill" id="K1p-L4-bEo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uss-Eu-saI">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="設定" id="rPR-dL-7vD"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="LSl-1G-A4M"/>
                     </view>
@@ -49,6 +67,15 @@
                     <view key="view" contentMode="scaleToFill" id="1cw-UY-ebY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MfZ-Iq-Yy4">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="カレンダー" id="mFN-ss-d7s"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="4zD-TE-q57"/>
                     </view>
@@ -70,7 +97,7 @@
                                 <rect key="frame" x="67" y="428" width="241" height="130"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxH-BI-RUO" userLabel="収入数値">
-                                        <rect key="frame" x="98.5" y="15" width="42" height="21"/>
+                                        <rect key="frame" x="127.5" y="15" width="42" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="tUV-Oo-rPL"/>
                                         </constraints>
@@ -79,7 +106,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0c0-Za-Myl" userLabel="支出数値">
-                                        <rect key="frame" x="98.5" y="51" width="42" height="21"/>
+                                        <rect key="frame" x="127.5" y="51" width="42" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="rI7-no-apI"/>
                                         </constraints>
@@ -88,7 +115,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支出:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ad3-2r-aRQ">
-                                        <rect key="frame" x="31" y="51" width="40" height="21"/>
+                                        <rect key="frame" x="60" y="51" width="40" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="HGz-VK-BX2"/>
                                         </constraints>
@@ -97,7 +124,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="収入:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQc-9B-YHP">
-                                        <rect key="frame" x="31" y="15" width="40" height="21"/>
+                                        <rect key="frame" x="60" y="15" width="40" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="7se-2C-cmG"/>
                                         </constraints>
@@ -106,7 +133,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="収支:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWj-iY-dUP">
-                                        <rect key="frame" x="31" y="87" width="40" height="21"/>
+                                        <rect key="frame" x="60" y="87" width="40" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="8ho-qF-KWO"/>
                                         </constraints>
@@ -115,7 +142,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHt-H4-cC2" userLabel="支出数値">
-                                        <rect key="frame" x="98.5" y="87" width="42" height="21"/>
+                                        <rect key="frame" x="127.5" y="87" width="42" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="D2z-eQ-fhg"/>
                                         </constraints>
@@ -139,12 +166,19 @@
                                     <constraint firstItem="pQc-9B-YHP" firstAttribute="top" secondItem="cpf-W3-3wS" secondAttribute="top" constant="15" id="ZSQ-Cy-hFq"/>
                                     <constraint firstItem="bHt-H4-cC2" firstAttribute="leading" secondItem="YxH-BI-RUO" secondAttribute="leading" id="aC6-pE-btj"/>
                                     <constraint firstItem="Ad3-2r-aRQ" firstAttribute="top" secondItem="pQc-9B-YHP" secondAttribute="bottom" constant="15" id="fPI-Mi-iMF"/>
-                                    <constraint firstItem="pQc-9B-YHP" firstAttribute="leading" secondItem="cpf-W3-3wS" secondAttribute="leading" constant="31" id="n3z-x8-1NP"/>
+                                    <constraint firstItem="pQc-9B-YHP" firstAttribute="leading" secondItem="cpf-W3-3wS" secondAttribute="leading" constant="60" id="n3z-x8-1NP"/>
                                     <constraint firstItem="0c0-Za-Myl" firstAttribute="top" secondItem="YxH-BI-RUO" secondAttribute="bottom" constant="15" id="pyL-lE-R5m"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bHt-H4-cC2" secondAttribute="trailing" constant="20" symbolic="YES" id="tai-tw-xou"/>
                                     <constraint firstItem="bHt-H4-cC2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fWj-iY-dUP" secondAttribute="trailing" constant="8" symbolic="YES" id="vDU-Rs-GkN"/>
                                 </constraints>
                             </view>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fX7-Gb-mF9">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="ホーム" id="LlB-o3-84K"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -156,6 +190,11 @@
                         <viewLayoutGuide key="safeArea" id="44N-cH-DHF"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="ホーム" id="e7h-9L-bKe"/>
+                    <connections>
+                        <outlet property="inPrice" destination="YxH-BI-RUO" id="yEN-us-QLM"/>
+                        <outlet property="outPrice" destination="0c0-Za-Myl" id="iH3-ZR-CRr"/>
+                        <outlet property="restPrice" destination="bHt-H4-cC2" id="SkF-Kx-3X9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8K7-rR-1LL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
