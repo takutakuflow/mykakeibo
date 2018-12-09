@@ -9,6 +9,7 @@ target 'mykakeibo' do
  
   pod 'Firebase/Core'
   pod 'XYPieChart', '~> 0.2'  
+  pod 'FSCalendar'
 
   target 'mykakeiboTests' do
     inherit! :search_paths

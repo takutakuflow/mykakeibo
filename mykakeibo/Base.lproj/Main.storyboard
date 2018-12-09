@@ -120,22 +120,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MfZ-Iq-Yy4">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MfZ-Iq-Yy4">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="カレンダー" id="mFN-ss-d7s"/>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0PP-hp-lLR" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="64" width="375" height="274"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="safeArea" id="nVO-42-K3E"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0PP-hp-lLR" firstAttribute="trailing" secondItem="4zD-TE-q57" secondAttribute="trailing" id="ITw-nF-Wro"/>
+                            <constraint firstItem="MfZ-Iq-Yy4" firstAttribute="top" secondItem="4zD-TE-q57" secondAttribute="top" id="Inl-Vm-G5s"/>
+                            <constraint firstItem="0PP-hp-lLR" firstAttribute="top" secondItem="MfZ-Iq-Yy4" secondAttribute="bottom" id="Th7-Sz-No1"/>
+                            <constraint firstItem="0PP-hp-lLR" firstAttribute="leading" secondItem="4zD-TE-q57" secondAttribute="leading" id="X30-HT-Nta"/>
+                            <constraint firstItem="4zD-TE-q57" firstAttribute="bottom" secondItem="0PP-hp-lLR" secondAttribute="bottom" constant="300" id="rSh-Z2-Gtv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4zD-TE-q57"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="カレンダー" id="2Vw-s3-Yx0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ss-sq-iMI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1543" y="302"/>
+            <point key="canvasLocation" x="1541.5999999999999" y="301.79910044977515"/>
         </scene>
         <!--ホーム-->
         <scene sceneID="N7S-6Q-2KT">
