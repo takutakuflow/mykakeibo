@@ -35,22 +35,19 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // "cell"というkeyでcellデータを取得
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    // cellデータが無い場合、UITableViewCellを生成して、"cell"というkeyでキャッシュする
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-    }
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"inputCell"];
     
+    UILabel *label = [cell viewWithTag:1];
+
     switch (indexPath.row) {
         case 0:
-            cell.textLabel.text = @"金額";
+            label.text = @"金額";
             break;
         case 1:
-            cell.textLabel.text = @"カテゴリー";
+            label.text = @"カテゴリー";
             break;
         case 2:
-            cell.textLabel.text = @"日付";
+            label.text = @"日付";
             break;
         default:
             break;
